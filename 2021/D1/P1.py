@@ -4,7 +4,7 @@ prv = sys.maxsize
 cur = 0
 out = 0
 
-with open('Day 1\input.txt', 'r') as s:
+with open('2021\D1\input.txt', 'r') as s:
     for line in s:
         cur = int(line)
         if cur > prv:

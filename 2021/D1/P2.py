@@ -1,4 +1,4 @@
-s =  open('Day 1\input.txt', 'r').read()
+s =  open('2021\D1\input.txt', 'r').read()
 list = [int(x) for x in s.splitlines()]
 out = 0
 

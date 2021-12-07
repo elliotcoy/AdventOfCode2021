@@ -2,7 +2,7 @@ out = 0
 x = 0
 y = 0
 
-with open('Day 2\P1\input.txt', 'r') as s:
+with open('2021\D2\P1\input.txt', 'r') as s:
     for line in s:
         cmd = line.split(' ')
         

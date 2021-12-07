@@ -2,7 +2,7 @@ out = 0
 gamma = ''
 epsilon = ''
 bits = [0] * 12
-file = open('Day 3\input.txt', 'r')
+file = open('2021\D3\input.txt', 'r')
 
 
 for line in file:

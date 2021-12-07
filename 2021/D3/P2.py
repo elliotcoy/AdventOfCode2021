@@ -1,6 +1,6 @@
 out = 0
 lineWidth = 12
-inputList = open('Day 3\input.txt', 'r').read().splitlines()
+inputList = open('2021\D3\input.txt', 'r').read().splitlines()
 
 # common bit from column
 def comBit(_list, _i):

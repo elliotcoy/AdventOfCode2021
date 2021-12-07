@@ -1,6 +1,6 @@
 
 # handle input
-inList = open('Day 5\input.txt', 'r').read().splitlines()
+inList = open('2021\D5\input.txt', 'r').read().splitlines()
 
 # vec2 exists now
 class vec2:

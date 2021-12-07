@@ -1,5 +1,5 @@
 
-fishlist = list(map(int, open('Day 6\input.txt','r').read().split(',') ))
+fishlist = list(map(int, open('2021\D6\input.txt','r').read().split(',') ))
 print(fishlist)
 
 days = 256
@@ -29,5 +29,5 @@ for day in range(days):
     for count in numfish[0]:  out += count
     for count in numfish[1]:  out += count
 
-    print(f'Day {day+1}:  {out}')
+    print(f'D{day+1}:  {out}')
 

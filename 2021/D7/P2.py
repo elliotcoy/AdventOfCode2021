@@ -1,5 +1,5 @@
 
-crabs = list(map(int,open('Day 7\input.txt','r').read().split(',')))
+crabs = list(map(int,open('2021\D7\input.txt','r').read().split(',')))
 
 def abs(n):
     if n < 0:
