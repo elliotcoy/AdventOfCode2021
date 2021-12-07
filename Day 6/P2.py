@@ -2,21 +2,32 @@
 fishlist = list(map(int, open('Day 6\input.txt','r').read().split(',') ))
 print(fishlist)
 
-# TODO: add grouping for larger number of days.
+days = 256
+numfish = []
+numfish.append([0]*7) # old fish 0 -> 6
+numfish.append([0]*2) # new fish 0 -> 1
+out = 0
 
-days = 80
+for fish in fishlist:
+    numfish[0][fish] += 1
+
 for day in range(days):
-    newfish = 0
-    for n in range(len(fishlist)):
-        fishlist[n] -= 1
-        if fishlist[n] < 0:
-            fishlist[n] = 6
-            newfish += 1
 
-    for i in range(newfish):
-        fishlist.append(8)
-        
-    print(f'Day {day}:  ' + str(len(fishlist)))
+    temp = [0]*7
 
-print(len(fishlist))
+    for i in range(7): 
+        temp[i-1] = numfish[0][i]
+
+    temp[6] += numfish[1][0]
+    numfish[1][0] = numfish[1][1]
+    numfish[1][1] = numfish[0][0]
+
+    numfish[0] = temp
+
+    # update total number of fish
+    out = 0
+    for count in numfish[0]:  out += count
+    for count in numfish[1]:  out += count
+
+    print(f'Day {day+1}:  {out}')
 
